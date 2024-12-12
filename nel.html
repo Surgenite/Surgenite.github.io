@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Lock Neo Egoist League</title>
+    <style>
+        body {
+            background-image: url('nel.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 400px;
+            margin: 50px auto;
+        }
+        .form-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .form-container select, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<a href="index.html">Home</a>
+&nbsp; &nbsp; &nbsp; &nbsp;
+<a href="japanU20.html">U20 Arc</a>
+&nbsp; &nbsp; &nbsp; &nbsp;
+<a href="nel.html">Neo Egoist League</a>
+&nbsp; &nbsp; &nbsp; &nbsp;
+<a href="https://github.com/Surgenite/CTI-110" target="_blank">GitHub</a><br><br>
+<body>
+    <div class="form-container">
+        <h1>What's Your Favorite Team?</h1>
+        <form action="/submit" method="post">
+            <label for="team">Select your favorite team:</label>
+            <select id="team" name="team" required>
+                <option value="">-- Choose a team --</option>
+                <option value="PXG">PXG</option>
+                <option value="Manshine City">Manshine City</option>
+                <option value="Ubers">Ubers</option>
+                <option value="Barca">Barca</option>
+                <option value="Bastard Munchen">Bastard Munchen</option>
+            </select>
+            <label for="comments">Your Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
